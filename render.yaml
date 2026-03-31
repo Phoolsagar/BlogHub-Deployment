@@ -24,8 +24,9 @@ services:
       - key: FRONTEND_ORIGIN
         value: https://bloghub-frontend.onrender.com
 
-  - type: static_site
+  - type: web
     name: bloghub-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: ""
     staticPublishPath: .
